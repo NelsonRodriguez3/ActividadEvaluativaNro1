@@ -1,0 +1,18 @@
+<!-- templates/template_de_consulta.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Modelos</title>
+</head>
+<body>
+    <h1>Listado de Modelos</h1>
+    <ul>
+        {% for objeto in objetos %}
+        <li>{{ objeto.campo1 }}, {{ objeto.campo2 }}</li>
+        {% empty %}
+        <li>No hay objetos disponibles</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
